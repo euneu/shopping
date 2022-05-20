@@ -160,7 +160,7 @@ let cart = [] // 장바구니에 들어갈 상품들
       $('#user_name').on('input',function(){
         user_name = $('#user_name').val();
       })
-      $('#user_name').on('input',function(){
+      $('#user_phone').on('input',function(){
         user_phone  = $('#user_phone').val();
       })
 
@@ -176,9 +176,9 @@ let cart = [] // 장바구니에 들어갈 상품들
           sum += parseInt(a.count)
           var count = (i+1);
           c.fillText(a.title,20, count * 100);
-          c.fillText(a.brand,20, (count * 100) + (count *20));
-          c.fillText(`가격 : ${a.price}`,20,(count * 100) + (count *40));
-          c.fillText(`수량 : ${a.count}`,20,(count * 100) + (count *60));
+          c.fillText(a.brand,20, (count * 100) + 20);
+          c.fillText(`가격 : ${a.price}`,20,(count * 100) + 40);
+          c.fillText(`수량 : ${a.count}`,20,(count * 100) + 60);
 
         });
 
