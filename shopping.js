@@ -1,6 +1,6 @@
 let cart = [] // 장바구니에 들어갈 상품들
       
-      $.get('/store.json').done(function(data){
+      $.get('https://euneu.github.io/shopping/store.json').done(function(data){
         let products = data.products
 
         //-----상품 불러오기-----//
