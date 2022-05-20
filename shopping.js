@@ -170,7 +170,7 @@ let cart = [] // 장바구니에 들어갈 상품들
         var c = canvas.getContext('2d');
         c.font = '20px dotum';
         c.fillText(`성함 : ${user_name}`,20,30);
-        c.fillText(`연락처 : ${user_phone}`,20,40);
+        c.fillText(`연락처 : ${user_phone}`,20,50);
         let sum = 0;
         cart.forEach(function(a,i){
           sum += parseInt(a.count)
